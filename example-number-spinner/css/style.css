@@ -1,0 +1,27 @@
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  /*font-weight: 300;*/
+  font-size: 22px;
+  margin: 50px;
+  background-color: AliceBlue;
+  line-height: 1.7;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.number-spinner {
+  font-variant-numeric: tabular-nums;
+  border: 1px solid #0004;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  user-select: none;
+}
+
+.number-spinner:hover {
+  border: 2px solid #0004;
+  padding: 4px;
+}
