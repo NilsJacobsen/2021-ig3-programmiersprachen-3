@@ -7,14 +7,26 @@ $('.number-spinner').mousedown(function(e) {
   let clickX = e.clientX;
   let clickY = e.clientY;
   let clickValue = parseFloat($(clickedElement).text());
+  let factor = 1;
+
 
   // 2. Ab dann ständig schauen, wo die Maus ist.
   $(window).mousemove(function(e) {
+    let actY = e.clientY;
     let actX = e.clientX;
-    let distX = actX - clickX;
-    let value = parseFloat($(clickedElement).text());
+
+    if((actY - clickY) >= 50){
+      factor = 10;
+    }else if((actY - clickY) <= -50){
+      factor = 0.1;
+    }else{
+      factor = 1;
+    }
+
+    let distX = (actX - clickX) * factor;
+    let actValue = parseFloat($(clickedElement).text());
     
-    let newValue = clickValue + distX;
+    let newValue = (actValue + distX);
     
     // 3. Zahl der Number Spinners entsprechend verändern.
     $(clickedElement).text(newValue);
