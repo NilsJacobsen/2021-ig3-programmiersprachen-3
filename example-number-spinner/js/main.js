@@ -1,5 +1,3 @@
-
-
 $('.number-spinner').mousedown(function(e) {
 
   // 1. Beim Drücken der Maustaste -> Koordinaten merken
@@ -15,19 +13,20 @@ $('.number-spinner').mousedown(function(e) {
     let actY = e.clientY;
     let actX = e.clientX;
 
-    if((actY - clickY) >= 50){
+    if ((actY - clickY) >= 50) {
       factor = 10;
-    }else if((actY - clickY) <= -50){
+    } else if ((actY - clickY) <= -50) {
       factor = 0.1;
-    }else{
+    } else {
       factor = 1;
     }
 
+
     let distX = (actX - clickX) * factor;
     let actValue = parseFloat($(clickedElement).text());
-    
+
     let newValue = (actValue + distX);
-    
+
     // 3. Zahl der Number Spinners entsprechend verändern.
     $(clickedElement).text(newValue);
   });
@@ -38,8 +37,3 @@ $('.number-spinner').mousedown(function(e) {
   });
 
 });
-
-
-
-
-
