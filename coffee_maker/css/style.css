@@ -37,7 +37,9 @@
 }
 .drink{
     width: 60%;
-    background-color: black;
+    background-image: url("../assets/CoffeecupFett.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .ingredients{
     width: 18%;
