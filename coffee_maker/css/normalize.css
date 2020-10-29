@@ -2,11 +2,15 @@
 
 /* Document
    ========================================================================== */
-
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+  /** Fonts importieren 
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
 
 html {
   line-height: 1.15; /* 1 */
@@ -21,6 +25,11 @@ html {
  */
 
 body {
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #5E7A81;
+  background-color: #AFE0E0;
   margin: 0;
 }
 
@@ -38,7 +47,10 @@ main {
  */
 
 h1 {
-  font-size: 2em;
+  font-family: 'Rochester', cursive;
+  font-size: 90px;
+  text-align: center;
+  color: #364751;
   margin: 0.67em 0;
 }
 
