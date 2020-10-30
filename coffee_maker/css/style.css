@@ -20,8 +20,6 @@
 }
 .h1{
 }
-.p{
-}
 /* live-drink */
 
 .live-drink{
@@ -49,37 +47,38 @@
     align-items: center;
     width: 18%;
     margin-left: 2%;
-    background-color: black;
+    margin-bottom: 4em;
+    margin-top: 1em;
 }
 
 .ingredient1{
-    width: 92px;
-    height: 92px;
-    border-radius: 46px;
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
     background-color: white;
 }
 .ingredient2{
-    width: 92px;
-    height: 92px;
-    border-radius: 46px;
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
     background-color: white;
 }
 .ingredient3{
-    width: 92px;
-    height: 92px;
-    border-radius: 46px;
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
     background-color: white;
 }
 .ingredient4{
-    width: 92px;
-    height: 92px;
-    border-radius: 46px;
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
     background-color: white;
 }
 .ingredient5{
-    width: 92px;
-    height: 92px;
-    border-radius: 46px;
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
     background-color: white;
 }
 
@@ -129,3 +128,34 @@
     margin-top: 5rem;
 }
 
+.size{
+    background-image: url('../assets/size.png');
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center;
+}
+.temperature{
+    background-image: url('../assets/temp.png');
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+}
+.beans{
+    background-image: url('../assets/beans.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    /* margin-right: -50%; */
+}
+.milk{
+    background-image: url('../assets/milk.png');
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: center;
+}
+.sugar{
+    background-image: url('../assets/sugar.png');
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center;
+}
