@@ -138,7 +138,7 @@
 }
 
 .size{
-    background-image: url('../assets/size.png');
+    background-image: url('../assets/size.svg');
     background-repeat: no-repeat;
     background-size: 55%;
     background-position: center;
@@ -169,7 +169,7 @@
     background-position: center;
 }
 .done{
-    background-image: url('../assets/done.png');
+    background-image: url('../assets/done.svg');
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
