@@ -13,15 +13,20 @@ $(document).ready(function(){
         arrows: false,
         speed: 150
     });
-    $('.slider').on('click', function(){
+    $('.slick-center').on('click', function(){
         $('.dropdown').toggleClass('js-resize-dropdown');
     });
     $('.slider-container').on('beforeChange', function(event, slick, currentSlide, nextSlide){
         $('.label-container').attr('class','label-container js-move-label');
+        $('.slick-center').on('click', function(){
+            $('.dropdown').toggleClass('js-resize-dropdown');
+        });
     });
     $('.slider-container').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        $('.slick-center').on('click', function(){
+            $('.dropdown').toggleClass('js-resize-dropdown');
+        });
         $('.label-container').attr('class','label-container');
-
         let id = $('.slick-center').attr('id');
         if($('.slick-center').length > 1){
             if($($('.slick-center')[0]).attr('id') == ""){
@@ -40,7 +45,7 @@ setInterval(function(){
     var slides = $('.slider-elem');
     for(var i  = 0; i < slides.length; i++){
         let x = sliderX - $(slides[i]).offset().left;
-        let newTop = Math.pow(Math.abs(x),2)/1700 + sliderTop + 20;
+        let newTop = Math.pow(Math.abs(x),2)/1700 + sliderTop + 80;
         $(slides[i]).offset({ top: newTop});    
     }
 },10);
