@@ -25,11 +25,25 @@ $(document).ready(function(){
 });
 
 setInterval(function(){ 
-    var slides = $('.slider-elem')
+    var slides = $('.slider-elem');
     for(var i  = 0; i < slides.length; i++){
         let x = sliderX - $(slides[i]).offset().left;
-        let newTop = Math.pow(Math.abs(x),2)/1500 + sliderTop;
-        $(slides[i]).offset({ top: newTop});
+        let newTop = Math.pow(Math.abs(x),2)/1700 + sliderTop + 20;
+        $(slides[i]).offset({ top: newTop});    
     }
-},20);
+},10);
+
+setInterval(function(){ 
+    var slides = $('.slider-child');
+    var parents = $('.slider-elem');
+    for(var i  = 0; i < slides.length; i++){
+        let x = sliderX - $(slides[i]).offset().left;
+        var offset = Math.abs(x)/15;
+        $(slides[i]).css("width", 200 - offset);
+        $(slides[i]).css("height", 200 - offset);
+        let sliderLeft = $(parents[i]).offset().left;
+        let newTop = Math.pow(Math.abs(x),2)/1700 + sliderTop + 20;
+        $(slides[i]).offset({ top: newTop + offset/2, left: sliderLeft + offset/2});
+    }
+},50);
 

@@ -32,7 +32,6 @@
 }
 .live-drink-container{
     width: 90%;
-    background-color: rgb(140, 140, 212);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -90,23 +89,27 @@
 .slider{
     height: 40%;
     width: 100%;
-    background-color: #AFE0E0;
+    background-color: #93D1D1;
+    border-radius: 36px 36px 0px 0px;
     display: flex;
     align-items: center;
+    margin-top: 2rem;
 }
 .slider-container{
     height: 70%;
     width: 100%;
-    background-color: #93D1D1;
     overflow: hidden;
-    border-radius: 36px 36px 0px 0px;
 }
 .slider-elem{
     height: 200px;
     width: 200px;
-    margin: 1rem;
-    background-color: rgb(107, 107, 107);
-    border-radius: 100px;
+    margin: 1.5rem;
+}
+.slider-child{
+    width: 100%;
+    height: 100%;
+    background-color: #364751;
+    border-radius: 200px;
 }
 .slick-list{
     height: 100%;
@@ -114,3 +117,12 @@
 .slick-track{
     height: 100%;
 }
+/* .slider-circle{
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    border-radius: 250px;
+    background-color: brown;
+    overflow: hidden;
+} */
+
