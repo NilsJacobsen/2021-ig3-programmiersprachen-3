@@ -4,7 +4,7 @@ var sliderX;
 
 $(document).ready(function(){
     $('.slider-container').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
@@ -13,11 +13,24 @@ $(document).ready(function(){
         arrows: false,
         speed: 150
     });
-    $('.slider').on('mousedown', function(){
-        console.log("bin da");
+    $('.slider').on('click', function(){
+        $('.dropdown').toggleClass('js-resize-dropdown');
+    });
+    $('.slider-container').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $('.label-container').attr('class','label-container js-move-label');
     });
     $('.slider-container').on('afterChange', function(event, slick, currentSlide, nextSlide){
-        console.log(event.currentTarget);
+        $('.label-container').attr('class','label-container');
+
+        let id = $('.slick-center').attr('id');
+        if($('.slick-center').length > 1){
+            if($($('.slick-center')[0]).attr('id') == ""){
+                id = $($('.slick-center')[1]).attr('id');
+            }else{
+                id = $($('.slick-center')[0]).attr('id');
+            }
+        }
+        $('.label-text').html(id);
     });
     sliderTop = $('.slick-center').offset().top;
     sliderX = $('.slick-center').offset().left;

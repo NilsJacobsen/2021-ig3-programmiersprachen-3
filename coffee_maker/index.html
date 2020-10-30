@@ -13,7 +13,6 @@
 </head>
 
 <body>
-  <script type="text/javascript" src="js/preventDefault.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <div class="main-container">
@@ -49,23 +48,31 @@
     <div class="slider">
       <div class="slider-circle"></div>
       <div class="slider-container">
-        <div class="slider-elem">
+        <div id="Size" class="slider-elem">
           <div class="slider-child size"></div>
         </div>
-        <div class="slider-elem">
+        <div id="Temp" class="slider-elem">
           <div class="slider-child temperature"></div>
         </div>
-        <div class="slider-elem">
+        <div id="Beans" class="slider-elem">
           <div class="slider-child beans"></div>
         </div>
-        <div class="slider-elem">
+        <div id="Milk" class="slider-elem">
           <div class="slider-child milk"></div>
         </div>
-        <div class="slider-elem">
+        <div id="Sugar" class="slider-elem">
           <div class="slider-child sugar"></div>
         </div>
         <div class="slider-elem">
           <div class="slider-child done"></div>
+        </div>
+      </div>
+      <div class="dropdown-container">
+        <div class="dropdown"></div>
+      </div>
+      <div class="label-container">
+        <div class="label">
+          <p class="label-text">Size</p>
         </div>
       </div>
     </div>

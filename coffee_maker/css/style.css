@@ -1,7 +1,7 @@
 .main-container{
     width: 100vw;
     height: 100vh;
-    background-color: #AFE0E0;
+    background-color: rgba(175,224,224,0.8);
 }
 
 /* header */
@@ -92,6 +92,32 @@
     background-color: #FDFFFF;
 }
 
+/* dropdown */
+.dropdown-container{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.dropdown{
+    opacity: 0;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: #364751;
+    margin-top: 0px;
+    bottom: 0;
+    transition: height 300ms;
+    transition: opacity 100ms;
+}
+.js-resize-dropdown{
+    opacity: 1;
+    height: 800px;
+    transition: height 300ms;
+}
 
 /* slider */
 
@@ -108,11 +134,13 @@
     height: 70%;
     width: 100%;
     overflow: hidden;
+    z-index: 1004;
 }
 .slider-elem{
     height: 200px;
     width: 200px;
     margin: 1.5rem;
+    
 }
 .slider-child{
     width: 100%;
@@ -136,6 +164,32 @@
     overflow: hidden;
     margin-top: 5rem;
 }
+.label-container{
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.label{
+    height: 100%;
+    width: 200px;
+    background-color: #FDFFFF;
+    border-radius: 25px;
+    z-index: 1005;
+}
+.label-text{
+    font-size: 36px;
+    line-height: 67px;
+    margin: 0;
+}
+.js-move-label{
+    margin-top: 40px;
+    transition: margin-top 200ms;
+}
+
+/* icons */
 
 .size{
     background-image: url('../assets/size.svg');
