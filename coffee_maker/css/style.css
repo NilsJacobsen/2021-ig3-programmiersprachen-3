@@ -198,32 +198,32 @@
 .size{
     background-image: url('../assets/cross-size.svg');
     background-repeat: no-repeat;
-    background-size: 55%;
+    background-size: 75%;
     background-position: center;
 }
 .temperature{
     background-image: url('../assets/cross-temperature.svg');
     background-repeat: no-repeat;
-    background-size: 30%;
+    background-size: 65%;
     background-position: center;
 }
 .beans{
     background-image: url('../assets/cross-beans.svg');
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 80%;
     background-position: center;
     /* margin-right: -50%; */
 }
 .milk{
     background-image: url('../assets/cross-milk.svg');
     background-repeat: no-repeat;
-    background-size: 35%;
+    background-size: 70%;
     background-position: center;
 }
 .sugar{
     background-image: url('../assets/cross-sugar.svg');
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 80%;
     background-position: center;
 }
 .done{
