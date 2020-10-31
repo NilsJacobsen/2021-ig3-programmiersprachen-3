@@ -2,17 +2,17 @@ const ingredients = {
   Size: {
     cups: {
       name: 'cups',
-      url: 'assets/cups.png',
+      url: 'assets/cups.svg',
       default: false
     },
     cupm: {
       name: 'cupm',
-      url: 'assets/cupm.png',
+      url: 'assets/cupm.svg',
       default: true
     },
     cupl: {
       name: 'cupl',
-      url: 'assets/cupl.png',
+      url: 'assets/cupl.svg',
       default: false
     }
   },
@@ -20,17 +20,17 @@ const ingredients = {
   Beans: {
     beans1: {
       name: 'beans1',
-      url: 'assets/beans1.png',
+      url: 'assets/beans1.svg',
       default: false
     },
     beans2: {
       name: 'beans2',
-      url: 'assets/beans2.png',
+      url: 'assets/beans2.svg',
       default: true
     },
     beans3: {
       name: 'beans3',
-      url: 'assets/beans3.png',
+      url: 'assets/beans3.svg',
       default: false
     }
   },
@@ -42,12 +42,12 @@ const ingredients = {
 >>>>>>> Stashed changes
     hot: {
       name: 'hot',
-      url: 'assets/hot.png',
+      url: 'assets/hot.svg',
       default: true
     },
     cold: {
       name: 'cold',
-      url: 'assets/cold.png',
+      url: 'assets/cold.svg',
       default: false
     }
   },
@@ -70,7 +70,7 @@ const ingredients = {
     },
     almond: {
       name: 'almond',
-      url: 'assets/almond.png',
+      url: 'assets/almonds.svg',
       default: false
     },
     nomilk: {
@@ -83,17 +83,17 @@ const ingredients = {
   Sugar: {
     sugar1: {
       name: 'sugar1',
-      url: 'assets/sugar1.png',
+      url: 'assets/sugar1.svg',
       default: false
     },
     sugar2: {
       name: 'sugar2',
-      url: 'assets/sugar2.png',
+      url: 'assets/sugar2.svg',
       default: false
     },
     sugar3: {
       name: 'sugar3',
-      url: 'assets/sugar3.png',
+      url: 'assets/sugar3.svg',
       default: false
     },
     nosugar: {
