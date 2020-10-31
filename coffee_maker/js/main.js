@@ -15,16 +15,81 @@ $(document).ready(function(){
     });
     $('.slick-center').on('click', function(){
         $('.dropdown').toggleClass('js-resize-dropdown');
+        if($('.dropdown').attr('class').includes('js-resize-dropdown') == true){
+            $('.slider-container').slick("slickSetOption", "accessibility", false);
+            $('.slider-container').slick("slickSetOption", "draggable", false);
+            $('.slider-container').slick("slickSetOption", "swipe", false);
+            $('.slider-container').slick("slickSetOption", "touchMove", false);
+            for(var j = 0; j < $('.slider-elem').length ; j++){
+                if($($('.slider-elem')[j]).attr('id') != $($('.slick-center')[0]).attr('id') && $($('.slider-elem')[j]).attr('id') != 'Done'){
+                    $($('.slider-child')[j]).css('background-color','#5E7A81');
+                }     
+            }
+        }else{
+            $('.slider-container').slick("slickSetOption", "accessibility", true);
+            $('.slider-container').slick("slickSetOption", "draggable", true);
+            $('.slider-container').slick("slickSetOption", "swipe", true);
+            $('.slider-container').slick("slickSetOption", "touchMove", true);
+            for(var j = 0; j < $('.slider-elem').length ; j++){
+                if($($('.slider-elem')[j]).attr('id') != 'Done'){
+                    $($('.slider-child')[j]).css('background-color','#364751');
+                }
+            }
+        }
     });
     $('.slider-container').on('beforeChange', function(event, slick, currentSlide, nextSlide){
         $('.label-container').attr('class','label-container js-move-label');
         $('.slick-center').on('click', function(){
             $('.dropdown').toggleClass('js-resize-dropdown');
+            if($('.dropdown').attr('class').includes('js-resize-dropdown') == true){
+                $('.slider-container').slick("slickSetOption", "accessibility", false);
+                $('.slider-container').slick("slickSetOption", "draggable", false);
+                $('.slider-container').slick("slickSetOption", "swipe", false);
+                $('.slider-container').slick("slickSetOption", "touchMove", false);
+                for(var j = 0; j < $('.slider-elem').length ; j++){
+                    if($($('.slider-elem')[j]).attr('id') != $($('.slick-center')[0]).attr('id') && $($('.slider-elem')[j]).attr('id') != 'Done'){
+                        $($('.slider-child')[j]).css('background-color','#5E7A81');
+                    }     
+                }
+            }else{
+                $('.slider-container').slick("slickSetOption", "accessibility", true);
+                $('.slider-container').slick("slickSetOption", "draggable", true);
+                $('.slider-container').slick("slickSetOption", "swipe", true);
+                $('.slider-container').slick("slickSetOption", "touchMove", true);
+                for(var j = 0; j < $('.slider-elem').length ; j++){
+                    if($($('.slider-elem')[j]).attr('id') != 'Done'){
+                        $($('.slider-child')[j]).css('background-color','#364751');
+                    }
+                }
+            }
         });
     });
     $('.slider-container').on('afterChange', function(event, slick, currentSlide, nextSlide){
         $('.slick-center').on('click', function(){
             $('.dropdown').toggleClass('js-resize-dropdown');
+            if($('.dropdown').attr('class').includes('js-resize-dropdown') == true){
+                $('.slider-container').slick("slickSetOption", "accessibility", false);
+                $('.slider-container').slick("slickSetOption", "draggable", false);
+                $('.slider-container').slick("slickSetOption", "swipe", false);
+                $('.slider-container').slick("slickSetOption", "touchMove", false);
+                for(var j = 0; j < $('.slider-elem').length ; j++){
+                    if($($('.slider-elem')[j]).attr('id') != $($('.slick-center')[0]).attr('id')){
+                        $($('.slider-child')[j]).css('background-color','#5E7A81');
+                    }     
+                }
+            }else{
+                $('.slider-container').slick("slickSetOption", "accessibility", true);
+                $('.slider-container').slick("slickSetOption", "draggable", true);
+                $('.slider-container').slick("slickSetOption", "swipe", true);
+                $('.slider-container').slick("slickSetOption", "touchMove", true);
+                for(var j = 0; j < $('.slider-elem').length ; j++){
+                    if($($('.slider-elem')[j]).attr('id') != 'Done'){
+                        $($('.slider-child')[j]).css('background-color','#364751');
+                    }else{
+                        $($('.slider-child')[j]).css('background-color','#FDFFFF');
+                    }
+                }
+            }
         });
         $('.label-container').attr('class','label-container');
         let id = $('.slick-center').attr('id');
