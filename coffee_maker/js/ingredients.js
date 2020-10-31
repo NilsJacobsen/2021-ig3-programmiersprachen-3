@@ -21,16 +21,19 @@ const ingredients = {
     beans1: {
       name: 'beans1',
       url: 'assets/beans1.svg',
+      color: '#442A1E',
       default: false
     },
     beans2: {
       name: 'beans2',
       url: 'assets/beans2.svg',
+      color: '#331E15',
       default: true
     },
     beans3: {
       name: 'beans3',
       url: 'assets/beans3.svg',
+      color: '#21120B',
       default: false
     }
   },
@@ -52,21 +55,25 @@ const ingredients = {
     soy: {
       name: 'soy',
       url: 'assets/soy.png',
+      color: '#FFEDDF',
       default: false
     },
     oat: {
       name: 'oat',
       url: 'assets/oat.png',
+      color: '#FFEDDF',
       default: false
     },
     cow: {
       name: 'cow',
       url: 'assets/cow.png',
+      color: '#FFFEF5',
       default: false
     },
     almond: {
       name: 'almond',
       url: 'assets/almonds.svg',
+      color: '#FFEDDF',
       default: false
     },
     nomilk: {
@@ -80,16 +87,19 @@ const ingredients = {
     sugar1: {
       name: 'sugar1',
       url: 'assets/sugar1.svg',
+      color: '#F1F1F1',
       default: false
     },
     sugar2: {
       name: 'sugar2',
       url: 'assets/sugar2.svg',
+      color: '#F1F1F1',
       default: false
     },
     sugar3: {
       name: 'sugar3',
       url: 'assets/sugar3.svg',
+      color: '#F1F1F1',
       default: false
     },
     nosugar: {
