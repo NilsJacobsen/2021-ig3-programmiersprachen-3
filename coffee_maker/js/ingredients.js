@@ -2,17 +2,20 @@ const ingredients = {
   Size: {
     cups: {
       name: 'cups',
-      url: 'assets/cups.svg',
+      url: 'assets/cups.png',
+      urlDark: 'assets/cupsDark.svg',
       default: false
     },
     cupm: {
       name: 'cupm',
-      url: 'assets/cupm.svg',
+      url: 'assets/cupm.png',
+      urlDark: 'assets/cupmDark.png',
       default: true
     },
     cupl: {
       name: 'cupl',
-      url: 'assets/cupl.svg',
+      url: 'assets/cupl.png',
+      urlDark: 'assets/cuplDark.png',
       default: false
     }
   },
@@ -20,37 +23,35 @@ const ingredients = {
   Beans: {
     beans1: {
       name: 'beans1',
-      url: 'assets/beans1.svg',
-      color: '#442A1E',
+      url: 'assets/beans1.png',
+      urlDark: 'assets/beans1Dark.svg',
       default: false
     },
     beans2: {
       name: 'beans2',
-      url: 'assets/beans2.svg',
-      color: '#331E15',
+      url: 'assets/beans2.png',
+      urlDark: 'assets/beans2Dark.svg',
       default: true
     },
     beans3: {
       name: 'beans3',
-      url: 'assets/beans3.svg',
-      color: '#21120B',
+      url: 'assets/beans3.png',
+      urlDark: 'assets/beans3Dark.svg',
       default: false
     }
   },
 
-<<<<<<< Updated upstream
   Temp: {
-=======
-  Temperature: {
->>>>>>> Stashed changes
     hot: {
       name: 'hot',
-      url: 'assets/hot.svg',
+      url: 'assets/hot.png',
+      urlDark: 'assets/hotDark.svg',
       default: true
     },
     cold: {
       name: 'cold',
-      url: 'assets/cold.svg',
+      url: 'assets/cold.png',
+      urlDark: 'assets/coldDark.svg',
       default: false
     }
   },
@@ -59,30 +60,31 @@ const ingredients = {
     soy: {
       name: 'soy',
       url: 'assets/soy.png',
-      color: '#FFEDDF',
+      urlDark: 'assets/soyDark.png',
       default: false
     },
     oat: {
       name: 'oat',
       url: 'assets/oat.png',
-      color: '#FFEDDF',
+      urlDark: 'assets/oatDark.png',
       default: false
     },
     cow: {
       name: 'cow',
       url: 'assets/cow.png',
-      color: '#FFFEF5',
+      urlDark: 'assets/cowDark.png',
       default: false
     },
     almond: {
       name: 'almond',
-      url: 'assets/almonds.svg',
-      color: '#FFEDDF',
+      url: 'assets/almond.png',
+      urlDark: 'assets/almondDark.svg',
       default: false
     },
     nomilk: {
       name: 'nomilk',
       url: 'assets/none.svg',
+      urlDark: 'assets/noneDark.svg',
       default: true
     }
   },
@@ -90,25 +92,26 @@ const ingredients = {
   Sugar: {
     sugar1: {
       name: 'sugar1',
-      url: 'assets/sugar1.svg',
-      color: '#F1F1F1',
+      url: 'assets/sugar1.png',
+      urlDark: 'assets/sugar1Dark.svg',
       default: false
     },
     sugar2: {
       name: 'sugar2',
-      url: 'assets/sugar2.svg',
-      color: '#F1F1F1',
+      url: 'assets/sugar2.png',
+      urlDark: 'assets/sugar2Dark.svg',
       default: false
     },
     sugar3: {
       name: 'sugar3',
-      url: 'assets/sugar3.svg',
-      color: '#F1F1F1',
+      url: 'assets/sugar3.png',
+      urlDark: 'assets/sugar3Dark.svg',
       default: false
     },
     nosugar: {
       name: 'nosugar',
       url: 'assets/none.svg',
+      urlDark: 'assets/noneDark.svg',
       default: true
     }
   }
