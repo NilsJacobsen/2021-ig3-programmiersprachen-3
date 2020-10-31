@@ -13,7 +13,7 @@ const selected = {
     }
   },
 
-  Temperature: {
+  Temp: {
     hot: {
       name: 'hot',
       url: 'assets/hot.png'
