@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300.6 223">
+<clipPath id="fillingmask" transform="translate(63.69)">
+    <path class="fillingmask" d="M0,0H187.5L164,223H22Z" />
+</clipPath>
+
+<rect id="milk" class="milk" clip-path="url(#fillingmask)" y="50.89" width="300.6" height="154.89" fill="#331E15" />
+<rect id="beans" class="beans" clip-path="url(#fillingmask)" width="300.6" height="50.89" fill="#FFFEF5"/>
+<rect id="sugar" class="sugar" clip-path="url(#fillingmask)" y="205.45" width="300.6" height="17.55" fill="#F1F1F1"/>
+</svg>

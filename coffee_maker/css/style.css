@@ -47,12 +47,16 @@
     width: 100%;
     height: 80%;
 }
-.coffee{
-    /* width: 100%;
-    height: 55%;
-    background-color: #551E13;
-    margin-top: 7.2em; */
+
+.filling-mask{
+    width: 100%;
+    height: 80%;
+    margin-top: 7.1em;
 }
+img{
+    margin-right: 24px;
+}
+
 .ingredients{
     display: flex;
     flex-direction: column;

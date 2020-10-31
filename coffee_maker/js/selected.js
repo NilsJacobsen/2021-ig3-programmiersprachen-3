@@ -1,33 +1,33 @@
 const selected = {
-  size: {
+  Size: {
     cupm: {
       name: 'cupm',
       url: 'assets/cupm.png'
     }
   },
 
-  beans: {
+  Beans: {
     beans2: {
       name: 'beans2',
       url: 'assets/beans2.png',
     }
   },
 
-  temperature: {
+  Temp: {
     hot: {
       name: 'hot',
       url: 'assets/hot.png'
     }
   },
 
-  milk: {
+  Milk: {
     cow: {
       name: 'cow',
       url: 'assets/cow.png'
     }
   },
 
-  sugar: {
+  Sugar: {
     sugar2: {
       name: 'sugar2',
       url: 'assets/sugar2.png'
