@@ -35,11 +35,7 @@ const ingredients = {
     }
   },
 
-<<<<<<< Updated upstream
   Temp: {
-=======
-  Temperature: {
->>>>>>> Stashed changes
     hot: {
       name: 'hot',
       url: 'assets/hot.svg',
