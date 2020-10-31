@@ -2,7 +2,7 @@ const selected = {
     Size: {
       cupm: {
         name: 'cupm',
-        url: 'assets/cupm.png',
+        url: 'assets/cupm.svg',
         urlDark: 'assets/cupmDark.svg'
       }
     },
@@ -10,25 +10,11 @@ const selected = {
     Beans: {
       beans2: {
         name: 'beans2',
-        url: 'assets/beans2.png',
+        url: 'assets/beans2.svg',
         urlDark: 'assets/beans2Dark.svg'
       }
     },
-
-    <<
-    <<
-    <<
-    <
-    Updated upstream
     Temp: {
-      ===
-      ===
-      =
-      Temperature: {
-        >>>
-        >>>
-        >
-        Stashed changes
         hot: {
           name: 'hot',
           url: 'assets/hot.png',
@@ -37,17 +23,17 @@ const selected = {
       },
 
       Milk: {
-        cow: {
-          name: 'cow',
-          url: 'assets/cow.png',
+        nomilk: {
+          name: 'nomilk',
+          url: 'assets/cow.svg',
           urlDark: 'assets/cowDark.png'
         }
       },
 
       Sugar: {
-        sugar2: {
-          name: 'sugar2',
-          url: 'assets/sugar2.png',
+        nosugar: {
+          name: 'nosugar',
+          url: 'assets/sugar2.svg',
           urlDark: 'assets/sugar2Dark.svg'
         }
       }

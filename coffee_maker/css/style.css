@@ -27,7 +27,7 @@
 
 .live-drink{
     width: 100%;
-    height: 50%;
+    height: 43%;
     display: flex;
     justify-content: center;
 }
@@ -39,6 +39,7 @@
 }
 .drink{
     width: 60%;
+    height: 100%;
     background-image: url("../assets/CoffeecupFett.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -46,58 +47,57 @@
 .filling{
     width: 100%;
     height: 80%;
+    margin-top: 40rem;
+}
+.js-filling{
+    margin-top: 21rem;
+    transition: margin-top 1s;
+}
+.js2-filling{
+    margin-top: 15rem;
+    transition: margin-top 1s;
 }
 
 .filling-mask{
     width: 100%;
-    height: 80%;
-    margin-top: 7.1em;
+    height: 0%;
+    margin-top: 6em;
+    overflow: hidden;
 }
+.js-filling-mask{
+    height: 80%;
+    transition: height 1s;
+}
+
 img{
-    margin-right: 24px;
+    margin-right: 29px;
+    margin-top: -22rem;
+}
+.js-my-img{
+    margin-top: -2.5em;
+    transition: margin-top 1s;
+}
+.js2-my-img{
+    margin-top: 0.2em;
+    transition: margin-top 1s;
 }
 
 .ingredients{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
     width: 18%;
     margin-left: 2%;
     margin-bottom: 4em;
-    margin-top: 1em;
+    margin-top: 2em;
+}
+.sideIngridient{
+    /* background-size: 50%;
+    background-position: center; */
 }
 
-.ingredient1{
-    width: 125px;
-    height: 125px;
-    border-radius: 100px;
-    background-color: #FDFFFF;
-}
-.ingredient2{
-    width: 125px;
-    height: 125px;
-    border-radius: 100px;
-    background-color: #FDFFFF;
-}
-.ingredient3{
-    width: 125px;
-    height: 125px;
-    border-radius: 100px;
-    background-color: #FDFFFF;
-}
-.ingredient4{
-    width: 125px;
-    height: 125px;
-    border-radius: 100px;
-    background-color: #FDFFFF;
-}
-.ingredient5{
-    width: 125px;
-    height: 125px;
-    border-radius: 100px;
-    background-color: #FDFFFF;
-}
 
 /* dropdown */
 .dropdown-container{
