@@ -2,6 +2,7 @@
 var sliderTop;
 var sliderX;
 
+<<<<<<< Updated upstream
 function getSize(obj) {
     var size = 0, key;
     for (key in obj) {
@@ -121,28 +122,63 @@ $(document).ready(function(){
             }
         }
         $('.label-text').html(id);
+=======
+console.log(selected);
+handleIngredient('Size', 'cups');
+console.log(selected);
+
+$(document).ready(function() {
+  $('.slider-container').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true,
+    dots: false,
+    arrows: false,
+    speed: 150
+  });
+  $('.slick-center').on('click', function() {
+    $('.dropdown').toggleClass('js-resize-dropdown');
+  });
+  $('.slider-container').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+    $('.label-container').attr('class', 'label-container js-move-label');
+    $('.slick-center').on('click', function() {
+      $('.dropdown').toggleClass('js-resize-dropdown');
     });
-    sliderTop = $('.slick-center').offset().top;
-    sliderX = $('.slick-center').offset().left;
+  });
+  $('.slider-container').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+    $('.slick-center').on('click', function() {
+      $('.dropdown').toggleClass('js-resize-dropdown');
+>>>>>>> Stashed changes
+    });
+    $('.label-container').attr('class', 'label-container');
+    let id = $('.slick-center').attr('id');
+    if ($('.slick-center').length > 1) {
+      if ($($('.slick-center')[0]).attr('id') == "") {
+        id = $($('.slick-center')[1]).attr('id');
+      } else {
+        id = $($('.slick-center')[0]).attr('id');
+      }
+    }
+    $('.label-text').html(id);
+  });
+  sliderTop = $('.slick-center').offset().top;
+  sliderX = $('.slick-center').offset().left;
 });
 
-setInterval(function(){ 
-    var slides = $('.slider-elem');
-    for(var i  = 0; i < slides.length; i++){
-        let x = sliderX - $(slides[i]).offset().left;
-        let newTop = Math.pow(Math.abs(x),2)/1700 + sliderTop + 80;
-        $(slides[i]).offset({ top: newTop});    
-    }
-},10);
+setInterval(function() {
+  var slides = $('.slider-elem');
+  for (var i = 0; i < slides.length; i++) {
+    let x = sliderX - $(slides[i]).offset().left;
+    let newTop = Math.pow(Math.abs(x), 2) / 1700 + sliderTop + 80;
+    $(slides[i]).offset({
+      top: newTop
+    });
+  }
+}, 10);
 
-setInterval(function(){ 
-    var slides = $('.slider-child');
-    var parents = $('.slider-elem');
-    for(var i  = 0; i < slides.length; i++){
-        
-    }
-},50);
-
+<<<<<<< Updated upstream
 function showIcons(obj){
     for(var i = 0; i < Object.values(obj).length; i++){
         var div = document.createElement("div");
@@ -166,3 +202,12 @@ function removeIcons(obj){
     var node = document.getElementById('parent');
     node.innerHTML = "";
 }
+=======
+setInterval(function() {
+  var slides = $('.slider-child');
+  var parents = $('.slider-elem');
+  for (var i = 0; i < slides.length; i++) {
+
+  }
+}, 50);
+>>>>>>> Stashed changes
