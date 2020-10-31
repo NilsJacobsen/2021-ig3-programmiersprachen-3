@@ -1,5 +1,5 @@
-function(){"use strict";
-f(!window.requestAnimationFrame){
+!function(){"use strict";
+if(!window.requestAnimationFrame){
     var a=null;
     window.requestAnimationFrame=function(t,i){
         var e=(new Date).getTime();a||(a=e);
