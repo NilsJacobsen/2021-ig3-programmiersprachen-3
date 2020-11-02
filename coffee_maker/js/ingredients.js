@@ -9,13 +9,13 @@ const ingredients = {
     cupm: {
       name: 'cupm',
       url: 'assets/cupm.svg',
-      urlDark: 'assets/cupmDark.png',
+      urlDark: 'assets/cupmDark.svg',
       default: true
     },
     cupl: {
       name: 'cupl',
       url: 'assets/cupl.svg',
-      urlDark: 'assets/cuplDark.png',
+      urlDark: 'assets/cuplDark.svg',
       default: false
     }
   },
