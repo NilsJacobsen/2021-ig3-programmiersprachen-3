@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Awesome Virtual Coffee Shop</title>
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="lib/jquery.min.js"></script>
+</head>
+
+<body>
+  <script type="text/javascript" src="js/ingredienthandler.js"></script>
+  <script type="text/javascript" src="js/ingredients.js"></script>
+  <script type="text/javascript" src="js/selected.js"></script>
+  <script type="text/javascript" src="js/tapanimation.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <div class="main-container">
+
+    <div class="header">
+      <div class="header-container">
+        <h1>Coffeemaker</h1>
+        <p>Customize your coffee!</p>
+      </div>
+    </div>
+
+    <div class="live-drink">
+      <div class="live-drink-container">
+        <div class="drink">
+          <div class="filling">
+            <div class="filling-mask">
+              <img class="my-img" src="assets/filling.svg">
+            </div>
+            <div class="size"></div>
+            <div class="temp"></div>
+            <div class="coffee"></div>
+            <div class="milk"></div>
+            <div class="sugar"></div>
+          </div>
+        </div>
+        <div id="sideColumn" class="ingredients">
+        </div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="slider-circle"></div>
+      <div class="slider-container">
+        <div id="Size" class="slider-elem">
+          <div class="slider-child size"></div>
+        </div>
+        <div id="Beans" class="slider-elem">
+          <div class="slider-child beans"></div>
+        </div>
+        <div id="Temp" class="slider-elem">
+          <div class="slider-child temperature"></div>
+        </div>
+        <div id="Milk" class="slider-elem">
+          <div class="slider-child milk"></div>
+        </div>
+        <div id="Sugar" class="slider-elem">
+          <div class="slider-child sugar"></div>
+        </div>
+        <div id="Done" class="slider-elem">
+          <div class="slider-child done"></div>
+        </div>
+      </div>
+      <div class="dropdown-container">
+        <div id="parent" class="dropdown"></div>
+      </div>
+      <div class="label-container">
+        <div class="label">
+          <p class="label-text">Size</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

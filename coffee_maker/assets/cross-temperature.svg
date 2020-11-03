@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" height="70" width="70">
+    <g class="nc-icon-wrapper js-transition-icon" data-effect="scale" data-event="click">
+        <g fill="none" class="js-transition-icon__state">
+            <path d="M34.716 58.143a6.857 6.857 0 1 1 6.857-6.857 6.865 6.865 0 0 1-6.857 6.857zm0-12a5.143 5.143 0 1 0 0 10.285 5.143 5.143 0 0 0 0-10.285z" fill="#FDFFFF"></path>
+            <path d="M34.724 65c-.229 0-.457-.005-.686-.016A13.784 13.784 0 0 1 21.011 51.8a13.644 13.644 0 0 1 7.705-12.843v-2.172h1.714v2.72a.858.858 0 0 1-.514.786 12 12 0 1 0 9.6 0 .857.857 0 0 1-.514-.785V11a4.286 4.286 0 1 0-8.572 0v22.322h-1.714V11a6 6 0 1 1 12 0v27.957A13.714 13.714 0 0 1 34.724 65z" fill="#FDFFFF"></path>
+            <path d="M33.859 13.566h1.714V17H33.86v-3.434z" fill="#FDFFFF"></path><path d="M33.859 20.428h1.714v24.858H33.86V20.428z" fill="#FDFFFF"></path>
+        </g>
+        <g fill="none" class="js-transition-icon__state" aria-hidden="true" style="display: none;">
+            <path d="M23 23.131l23.39 23.39" stroke="#FDFFFF" stroke-width="2.5" stroke-linecap="round"></path>
+            <path d="M23.39 46.5L46.757 23.13" stroke="#FDFFFF" stroke-width="2.5" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>
